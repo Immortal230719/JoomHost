@@ -1,0 +1,78 @@
+.header {
+    height: 47px;
+    background-color: #2f3f54;
+
+    span {
+        opacity: 0.3;
+    }
+
+    &__menu {
+        color: $text-color;
+        font-family: 'Lato';
+        font-size: 14px;
+        line-height: 47px;
+        font-weight: 300;        
+
+        &__question {
+            opacity: 0.3;
+        }
+
+        &__leftlink {
+            text-decoration: none;
+            opacity: 0.3;
+            color: $text-color;
+
+            &:hover {
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+
+        &__link {
+            margin-left: 15px;
+            text-decoration: none;
+            opacity: 0.3;
+            color: $text-color;
+            &:hover {
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 86px;
+    background-color: $text-color;
+
+    &__homelink {
+        color: $text-color2;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: $text-color2;
+        }
+    }
+
+    &__link {
+        margin-left: 40px;
+        color: $text-color2;
+        font-family: "Open Sans";
+        font-size: 14px;
+        line-height: 87px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: none;
+            color: $text-color2;
+        }
+    }
+}
