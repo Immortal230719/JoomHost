@@ -41,31 +41,84 @@
         </div>
 
         <nav>
-            <div class="nav">
-                <div class="container">
-                    <div class="row align-items-center no-gutters">
-                        <div class="col-lg-2">
-                            <a href="#" class="nav__homelink">
-                                <img src="icons/main_logo.png" alt="main_logo">
-                                JoomHost
-                            </a>
-                        </div>
-                        <div class="col-lg-8 text-right offset-lg-2">
-                            <div class="d-flex justify-content-end">
-                                <a href="#" class="nav__link">home</a>
-                                <a href="#" class="nav__link">about us</a>
-                                <a href="#" class="nav__link">whmcs-bridge</a>
-                                <a href="#" class="nav__link">hosting</a>
-                                <a href="#" class="nav__link">pages</a>
-                                <a href="#" class="nav__link">blog</a>
-                                <a href="#" class="nav__link">contact us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu__item_logo">
+                        <a href="#" class="menu__homelink">
+                            <img src="icons/main_logo.png" alt="main_logo">
+                            JoomHost
+                        </a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">home</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">about us</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">whmcs-bridge</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">hosting</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">pages</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">blog</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">contact us</a></li>
+                </ul>
             </div>
         </nav>
     </header>
+
+    <section class="promo position-relative">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-7">
+                    <div class="promo__wrapper">
+                        <div class="promo__text">
+                            <h3 class="promo__title">Simple – Easy to use – 10x faster!</h3>
+                            <h1 class="promo__header">The Best Web Hosting</h1>
+                            <h2 class="promo__subheader">Starting at $7.99 $3.95/month*</h2>
+                            <div class="promo__descr">
+                                Enter your website to see how we can help your business grow ...
+                            </div>
+                            <ul class="promo__list">
+                                <li><span class="icon-check-square"></span>FREE Domain</li>
+                                <li><span class="icon-check-square"></span>FREE Site Builders</li>
+                                <li><span class="icon-check-square"></span>1-Click<span
+                                        class="icon-wordpress"></span>WordPress Install</li>
+                                <li><span class="icon-check-square"></span>24/7 Support</li>
+                            </ul>
+                            <button class="promo__btn">Get Started Now!</button>
+                            <br>
+                            <a href="#" class="promo__special">
+                                *Special intro offer and 30-day money-back guarantee
+                            </a>
+                        </div>
+                        <div class="promo__img__green">
+                            <img src="img/main_menu_green.png" alt="menu_green">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="promo__img__grey">
+                        <img class="align-self-end" src="img/main_menu_grey.png" alt="menu_grey">
+                    </div>
+                    <div class="promo__label">
+                        <div class="promo__label__start">Starting at </div>
+                        <div class="promo__label__price">$7.99</div>
+                        <div class="promo__label__end">/month</div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo__search">
+                <form action="#">
+                    <input class="promo__input type=" text" name="domain" placeholder="Find your perfect domain name">
+                    <button class="promo__input__btn">Search Domain</button>
+                </form>
+                <div class="promo__search__descr">
+                    <ul class="promo__search__example">
+                        <li>.com $12.17</li>
+                        <li>.asia $5.17</li>
+                        <li>.online $5.17</li>
+                        <li>.me $3.49</li>
+                        <li>.cn $6.99</li>
+                    </ul>
+                    <a href="#" class="promo__search__link">*All prices per annul</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 </body>

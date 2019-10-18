@@ -11,7 +11,7 @@
         font-family: 'Lato';
         font-size: 14px;
         line-height: 47px;
-        font-weight: 300;        
+        font-weight: 300;
 
         &__question {
             opacity: 0.3;
@@ -33,6 +33,7 @@
             text-decoration: none;
             opacity: 0.3;
             color: $text-color;
+
             &:hover {
                 text-decoration: none;
                 color: $text-color;
@@ -41,11 +42,18 @@
     }
 }
 
-.nav {
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
     align-items: center;
     height: 86px;
     background-color: $text-color;
+
+    &__item_logo {
+        flex-grow: 5;
+    }
 
     &__homelink {
         color: $text-color2;
