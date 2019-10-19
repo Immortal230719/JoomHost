@@ -96,7 +96,7 @@
         text-transform: uppercase;
         text-decoration: none;
 
-        &::before {
+        &:before {
             content: '';
             position: absolute;
             left: 63px;
@@ -108,7 +108,7 @@
 
         &:hover {
             text-decoration: none;
-            color: $text-color2;
+            color: rgb(255, 139, 6);
         }
     }
 
@@ -123,7 +123,39 @@
 
         &:hover {
             text-decoration: none;
-            color: $text-color2;
+            color: rgb(255, 139, 6);
+        }
+    }
+}
+
+.nav_fixed {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+
+    .menu {
+        padding: 0 45px 0 95px;
+        background-color: rgba(255, 255, 255, 0.815);
+        height: 60px;
+        border-radius: 0 0 7px 7px;
+
+        &__homelink {
+            &:before {
+                top: 10px;
+                left: 113px;
+            }
+
+            &:hover {
+                color: rgb(255, 139, 6);
+            }
+        }
+
+        &__link {
+            &:hover {
+                color: rgb(255, 139, 6);
+            }
         }
     }
 }
