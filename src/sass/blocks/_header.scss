@@ -7,17 +7,23 @@
     }
 
     &__menu {
+        padding-top: 14px;
         color: $text-color;
         font-family: 'Lato';
         font-size: 14px;
-        line-height: 47px;
         font-weight: 300;
+
+        &__wrapper {
+            display: flex;
+        }
 
         &__question {
             opacity: 0.3;
+            margin-right: 71px;
         }
 
         &__leftlink {
+            margin-right: 63px;
             text-decoration: none;
             opacity: 0.3;
             color: $text-color;
@@ -29,10 +35,23 @@
         }
 
         &__link {
-            margin-left: 15px;
+            margin-left: 20px;
             text-decoration: none;
             opacity: 0.3;
             color: $text-color;
+
+            &:nth-child(1) {
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 4px;
+                    right: 220px;
+                    width: 16px;
+                    height: 14px;
+                    background: url('../icons/head_usa.png') center (center / cover) no-repeat;
+                }
+            }
 
             &:hover {
                 text-decoration: none;
@@ -42,8 +61,22 @@
     }
 }
 
+.icon-envelope {
+    font-size: 19px;
+    position: absolute;
+    left: 167px;
+    top: 2px;
+}
+
+.icon-phone-call {
+    font-size: 17px;
+    position: absolute;
+    top: 3px;
+    left: 357px;
+}
+
 .menu {
-    padding: 0;
+    padding: 0 0 0 45px;
     margin: 0;
     list-style: none;
     display: flex;
@@ -63,6 +96,16 @@
         text-transform: uppercase;
         text-decoration: none;
 
+        &::before {
+            content: '';
+            position: absolute;
+            left: 63px;
+            top: 71px;
+            width: 36px;
+            height: 41px;
+            background: url('../icons/main_logo.png') center (center / cover) no-repeat;
+        }
+
         &:hover {
             text-decoration: none;
             color: $text-color2;
@@ -70,7 +113,7 @@
     }
 
     &__link {
-        margin-left: 40px;
+        margin-left: 41px;
         color: $text-color2;
         font-family: "Open Sans";
         font-size: 14px;

@@ -17,16 +17,19 @@
         <div class="header">
             <div class="container">
                 <div class="header__menu">
-                    <div class="row align-items-center no-gutters">
-                        <div class="col-lg-2">
-                            <div class="header__menu__question">Have any question?</div>
-                        </div>
-                        <div class="col-lg-2">
-                            <span class="icon-envelope"></span>
-                            <a href="#" class="header__menu__leftlink">infinity@gmail.com </a> </div>
-                        <div class="col-lg-2">
-                            <span class="icon-phone-call"></span>
-                            <a href="tel:0800444333444" class="header__menu__leftlink">+080 0444 333 444</a>
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <div class="header__menu__wrapper">
+                                <div class="header__menu__question">Have any question?</div>
+                                <a href="#" class="header__menu__leftlink">
+                                    <span class="icon-envelope"></span>
+                                    infinity@gmail.com
+                                </a>
+                                <a href="tel:0800444333444" class="header__menu__leftlink">
+                                    <span class="icon-phone-call"></span>
+                                    +080 0444 333 444
+                                </a>
+                            </div>
                         </div>
                         <div class="col-lg-3 text-right offset-lg-3">
                             <div class="d-flex justify-content-end">
@@ -39,15 +42,14 @@
                 </div>
             </div>
         </div>
+        </div>
 
         <nav>
             <div class="container">
                 <ul class="menu">
                     <li class="menu__item_logo">
-                        <a href="#" class="menu__homelink">
-                            <img src="icons/main_logo.png" alt="main_logo">
-                            JoomHost
-                        </a></li>
+                        <a href="#" class="menu__homelink">JoomHost</a>
+                    </li>
                     <li class="menu__item"><a href="#" class="menu__link">home</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">about us</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">whmcs-bridge</a></li>
@@ -75,8 +77,10 @@
                             <ul class="promo__list">
                                 <li><span class="icon-check-square"></span>FREE Domain</li>
                                 <li><span class="icon-check-square"></span>FREE Site Builders</li>
-                                <li><span class="icon-check-square"></span>1-Click<span
-                                        class="icon-wordpress"></span>WordPress Install</li>
+                                <li><span class="icon-check-square"></span>1-Click
+                                    <div class="promo__list__wordpress">
+                                        <span class="icon-wordpress"></span>
+                                    </div>WordPress Install</li>
                                 <li><span class="icon-check-square"></span>24/7 Support</li>
                             </ul>
                             <button class="promo__btn">Get Started Now!</button>

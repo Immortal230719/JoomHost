@@ -5,7 +5,7 @@
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat;
 
     &__title {
-        margin-top: 15px;
+        margin-top: 14px;
         color: $text-color;
         font-family: 'Lato';
         font-size: 14px;
@@ -19,7 +19,7 @@
         font-family: "Roboto";
         font-size: 48px;
         font-weight: 700;
-        line-height: 48px;
+        line-height: 29px;
         text-transform: uppercase;
     }
 
@@ -33,23 +33,29 @@
     }
 
     &__descr {
-        margin-top: 14px;
+        margin-top: 9px;
         color: $text-color;
         font-family: 'Lato';
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 700;
         line-height: 14px;
     }
 
     &__list {
         list-style: none;
-        padding: 0 0 0 30px;
-        margin-top: 42px;
+        padding: 0 0 0 23px;
+        margin-top: 41px;
         color: $text-color;
         font-family: 'Lato';
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 700;
         line-height: 16px;
+
+        &__wordpress {
+            display: inline-block;
+            width: 19px;
+            height: 10px;
+        }
 
         li {
             margin-top: 10px;
@@ -59,7 +65,7 @@
 
             &:before {
                 color: #000000;
-                font-size: 19px;
+                font-size: 16px;
             }
         }
     }
@@ -67,7 +73,7 @@
     &__btn {
         width: 224px;
         height: 47px;
-        margin-top: 53px;
+        margin-top: 35px;
         border-radius: 24px;
         border: 3px solid #ffffff;
         background-color: #267ae9;
@@ -85,19 +91,19 @@
     &__img__green {
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: -12px;
     }
 
     &__img__grey {
         position: absolute;
         bottom: 0;
-        margin-left: 38px;
+        margin-left: 46px;
     }
 
     &__label {
-        padding: 73px 39px 69px 57px;
+        padding: 73px 39px 69px 55px;
         position: absolute;
-        left: 175px;
+        left: 184px;
         z-index: 4;
         width: 229px;
         height: 229px;
@@ -105,14 +111,16 @@
         border-radius: 100%;
 
         &__start {
+            margin-left: 2px;
             color: #212121;
             font-family: 'Lato';
             font-size: 14px;
-            font-weight: 300;
-            line-height: 14px;
+            font-weight: 500;
+            line-height: 12px;
         }
 
         &__price {
+            margin-top: 10px;
             color: #212121;
             font-family: 'Lato';
             font-size: 54px;
@@ -121,18 +129,20 @@
         }
 
         &__end {
+            margin-right: 13px;
             color: #212121;
             font-family: 'Lato';
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 14px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 13px;
             text-align: end;
         }
     }
 
     &__special {
         display: block;
-        margin-top: 18px;
+        margin-top: 17px;
+        margin-bottom: 29px;
         color: $text-color;
         font-family: 'Lato';
         font-size: 14px;
@@ -146,7 +156,7 @@
     }
 
     &__search {
-        padding: 110px 139px 75px 120px;
+        padding: 110px 138px 75px 120px;
         margin-top: 109px;
         height: 303px;
         box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
@@ -161,14 +171,14 @@
             padding: 0;
             list-style: none;
             display: flex;
-            margin: 35px 39px 0 0;
+            margin: 30px 38px 0 0;
             color: #212121;
             font-family: 'Lato';
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 700;
 
             li {
-                margin-right: 20px;
+                margin-right: 22px;
 
                 &:nth-child(1) {
                     color: #2575e7;
@@ -198,12 +208,12 @@
             font-family: 'Lato';
             font-size: 14px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 15px;
         }
     }
 
     &__input {
-        width: 667px;
+        width: 665px;
         height: 68px;
         padding: 28px 0 28px 32px;
         box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
@@ -216,6 +226,7 @@
         font-weight: 300;
 
         &__btn {
+            border: none;
             width: 210px;
             height: 68px;
             box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
@@ -233,5 +244,5 @@
 
 .icon-check-square {
     position: absolute;
-    left: 0;
+    left: -1px;
 }
