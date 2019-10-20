@@ -1,0 +1,104 @@
+.services {
+    min-height: 1203px;
+    padding: 290px 0 130px 0;
+    &__wrapper {
+        width: 555px;
+        display: flex;
+        box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
+        border-radius: 2px;
+    }
+
+    &__icon {
+        display: flex;
+        padding: 263px 30px 129px 30px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 105px;
+        height: 783px;
+        border-radius: 2px 0 0 2px;
+        background-color: #ffffff;
+        img {
+            &:nth-child(2) {
+                display: block;
+                margin-top: 7px;
+            }
+        }
+    }
+
+    &__text {
+        width: 450px;
+        height: 783px;
+        padding: 76px 55px 75px 42px;
+        box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
+        border-radius: 2px;
+        background-color: $main-color;
+    }
+
+    &__title {
+        color: $text-color;
+        font-family: 'Roboto';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    &__block {
+        min-height: 457px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__subtitle {
+        color: $text-color;
+        font-family: 'OpenSans';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &__descr {
+        margin-top: 22px;
+        color: $text-color;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    
+    &__title-right {
+        margin-left: 51px;
+        margin-top: 42px;
+        color: $text-color2;
+        font-family: 'Roboto';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;        
+    }
+    &__link {
+        font-family: 'Roboto';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        color: $main-color;
+    }
+
+    &__descr-right {
+        margin-left: 53px;
+        margin-top: 28px;
+        color: #4a6385;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    &__youtube {
+        font-family: 'Lato';
+        font-size: 14px;
+        line-height: 24px;
+        color: $main-color;
+        font-weight: 700;
+    }
+
+}

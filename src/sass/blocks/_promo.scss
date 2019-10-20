@@ -4,8 +4,12 @@
     padding: 150px 0 239px 0;
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat;
 
+    &__text{
+        margin-left: 1px;
+    }
+
     &__title {
-        margin-top: 14px;
+        margin-top: 13px;
         color: $text-color;
         font-family: 'Lato';
         font-size: 14px;
@@ -14,7 +18,7 @@
     }
 
     &__header {
-        margin-top: 18px;
+        margin-top: 19px;
         color: $text-color;
         font-family: "Roboto";
         font-size: 48px;
@@ -24,11 +28,12 @@
     }
 
     &__subheader {
+        margin-left: -1px;
         margin-top: 26px;
         color: $text-color;
         font-family: 'Lato';
         font-size: 19px;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 26px;
     }
 
@@ -37,46 +42,54 @@
         color: $text-color;
         font-family: 'Lato';
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 400;
         line-height: 14px;
     }
 
     &__list {
         list-style: none;
-        padding: 0 0 0 23px;
-        margin-top: 41px;
+        padding: 0;
+        margin-top: 40px;
         color: $text-color;
         font-family: 'Lato';
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 200;
         line-height: 16px;
 
         &__wordpress {
+            position: relative;
+            left: 3px;
+            top: 1px;
             display: inline-block;
-            width: 19px;
+            width: 22px;
             height: 10px;
         }
 
         li {
-            margin-top: 10px;
+            margin-top: 9px;            
         }
-
         span {
-
-            &:before {
-                color: #000000;
-                font-size: 16px;
+            &::before {
+                color: #000;
             }
-        }
+        }     
+    }
+    
+    &__check {
+        position: relative;    
+        top: 0px;
+        left: -3px;
+        width: 16px;
+        height: 16px;
     }
 
     &__btn {
         width: 224px;
         height: 47px;
-        margin-top: 35px;
+        margin-top: 33px;
         border-radius: 24px;
         border: 3px solid #ffffff;
-        background-color: #267ae9;
+        background-color: $main-color;
         color: $text-color;
         font-family: 'Lato';
         font-size: 14px;
@@ -231,7 +244,7 @@
             height: 68px;
             box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
             border-radius: 0 2px 2px 0;
-            background-color: #2575e7;
+            background-color: $main-color;
             color: $text-color;
             font-family: 'Lato';
             font-size: 14px;
@@ -245,4 +258,5 @@
 .icon-check-square {
     position: absolute;
     left: -1px;
+    -webkit-text-stroke: 1px #000;
 }

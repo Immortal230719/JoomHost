@@ -76,7 +76,7 @@
 }
 
 .menu {
-    padding: 0 0 0 45px;
+    padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
@@ -88,34 +88,12 @@
         flex-grow: 5;
     }
 
-    &__homelink {
-        color: $text-color2;
-        font-family: 'Roboto';
-        font-size: 22px;
-        font-weight: 700;
-        text-transform: uppercase;
-        text-decoration: none;
-
-        &:before {
-            content: '';
-            position: absolute;
-            left: 63px;
-            top: 71px;
-            width: 36px;
-            height: 41px;
-            background: url('../icons/main_logo.png') center (center / cover) no-repeat;
-        }
-
-        &:hover {
-            text-decoration: none;
-            color: rgb(255, 139, 6);
-        }
-    }
+    
 
     &__link {
         margin-left: 41px;
         color: $text-color2;
-        font-family: "Open Sans";
+        font-family: "OpenSans";
         font-size: 14px;
         line-height: 87px;
         font-weight: 700;
@@ -136,16 +114,12 @@
     top: 0;
 
     .menu {
-        padding: 0 45px 0 95px;
+        padding: 0 50px;
         background-color: rgba(255, 255, 255, 0.815);
         height: 60px;
         border-radius: 0 0 7px 7px;
 
         &__homelink {
-            &:before {
-                top: 10px;
-                left: 113px;
-            }
 
             &:hover {
                 color: rgb(255, 139, 6);
