@@ -97,7 +97,7 @@
         text-transform: uppercase;
 
         &:hover {
-            background-color: #145bb8a8;
+            background-color: rgb(255, 139, 6);
         }
     }
 
@@ -222,6 +222,10 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 15px;
+            &:hover {
+                text-decoration: none;
+                color: rgb(255, 139, 6);
+            }
         }
     }
 
@@ -250,6 +254,9 @@
             font-size: 14px;
             font-weight: 300;
             line-height: 24px;
+            &:hover {
+                background-color: rgb(255, 139, 6);
+            }
         }
     }
 

@@ -63,7 +63,7 @@
         color: $text-color;
         font-family: 'Lato';
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 700;
         line-height: 24px;
     }
     
@@ -82,6 +82,10 @@
         font-weight: 700;
         line-height: 50px;
         color: $main-color;
+        &:hover {
+            text-decoration: none;
+            color: rgb(255, 139, 6);
+        }
     }
 
     &__descr-right {
@@ -90,7 +94,7 @@
         color: #4a6385;
         font-family: 'Lato';
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 800;
         line-height: 24px;
     }
     &__youtube {
@@ -99,6 +103,10 @@
         line-height: 24px;
         color: $main-color;
         font-weight: 700;
+        &:hover {
+            text-decoration: none;
+            color: rgb(255, 139, 6);
+        }
     }
 
 }

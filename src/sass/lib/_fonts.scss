@@ -41,6 +41,16 @@
 @font-face {
   font-family: 'Lato';
   font-display:swap;
+  src: url('../fonts/lato/Lato-Medium.woff2') format('woff2'),
+    url('../fonts/lato/Lato-Medium.woff') format('woff'),
+    url('../fonts/lato/Lato-Medium.ttf') format('ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-display:swap;
   src: url('../fonts/lato/Lato-Light.ttf') format('ttf'),
     url('../fonts/lato/Lato-Light.woff') format('woff'),
     url('../fonts/lato/Lato-Light.ttf') format('ttf');
