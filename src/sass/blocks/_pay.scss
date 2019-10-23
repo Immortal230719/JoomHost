@@ -1,0 +1,40 @@
+.pay {
+    min-height: 1304px;
+    padding: 124px 0 179px 0;
+    &__title {
+        color: #2f3f54;
+        font-family: 'Roboto';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.06px;
+        span {
+            color: $main-color;
+        }
+    }
+
+    &__descr {
+        margin: 0 auto;
+        margin-top: 38px;
+        width: 595px;
+        color: $text-color2;
+        font-family: 'Roboto';
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.4px;
+        span {
+            color: #e74c3c;
+            &:nth-child(3) {
+                color: #42d6c1;
+            }
+        }        
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 120px;
+        justify-content: space-between;
+    }
+}
