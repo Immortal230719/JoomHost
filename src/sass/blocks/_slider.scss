@@ -1,0 +1,141 @@
+.slider {
+    min-height: 842px;
+    padding: 113px 0 0 0;
+    &__title {
+        text-align: center;
+        color: $text-color2;
+        font-family: Roboto;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0.1px;
+        span {
+            color: $main-color;
+        }
+    }
+    &__my {
+        margin-top: 165px;
+        width: 1140px;
+        border: none;
+        .slick-slide {
+            display: flex;           
+            width: 524px;
+            height: 347px;
+            box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
+            background-color: #ffffff;
+            border: none;
+            &:nth-child(2n - 1) {
+                margin-right: 93px;
+            }
+        }
+    }
+    
+    &__blue {
+        width: 193px;
+        height: 347px;
+        background-color: $main-color;
+        border:none;
+    }
+    &__photo {
+        margin-top: 114px;
+        margin-left: 38px;
+        width: 119px;
+        height: 119px;
+        background-color: #212121;
+        border-radius: 100%;
+    }
+    &__wrapper {
+        width: 329px;
+        padding: 59px 40px 40px 41px;
+    }
+    &__descr {
+        color: #4a6385;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.2px;
+    }
+    &__sign {
+        margin-top: 21px;
+        margin-left: -1px;
+        color: #2f3f54;
+        font-family: 'Lato';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+        a {
+            color: $main-color;
+            &:hover {
+                text-decoration: none;
+                color: rgb(255, 139, 6);
+            }
+        }
+    }    
+}
+.my-dots {
+    position: absolute;
+    bottom: -87px;
+
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+  
+.my-dots li {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    margin: 0 -3px;
+    margin-top: -20px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+}
+  
+.my-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+  
+.my-dots li button:hover,
+.my-dots li button:focus {
+    outline: none;
+}
+  
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+    opacity: 1;
+}
+  
+.my-dots li button:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: $main-color;
+    text-align: center;
+    opacity: .3;
+    transition: 0.5s all;   
+}
+.my-dots li.slick-active button:before {
+    opacity: 1;
+    background-color: #fff;
+    border: 3px solid $main-color;
+}
