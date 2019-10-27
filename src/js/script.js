@@ -7,7 +7,8 @@ $(document).ready(function () {
             $('.nav_fixed').css("display", "flex");
             $('nav_fixed').hide();
             $('.nav_fixed').fadeIn();
-        } else {
+        }
+        else {
             $('.nav_fixed').fadeOut();
         }
     });
@@ -23,6 +24,24 @@ $(document).ready(function () {
         dotsClass: 'my-dots',
         dots: true,
         speed: 1000
-      });
+    });
+
+    //! pageUp button
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1000) {
+            $(".page-up").fadeIn();
+        } else {
+            $(".page-up").fadeOut();
+        }
+    });
+
+    $("a[href^=#up]").click(function() {
+        const _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+    });
+
+    new WOW().init();
 
 });
