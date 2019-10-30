@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<div lang="en">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -361,7 +360,7 @@
     </section>
 
     <footer>
-        <fotter class="contact">
+        <div class="contact">
             <div class="container">
                 <div class="contact__wrapper">
                     <div class="contact__logo">
@@ -394,9 +393,33 @@
                         <a href="#" class="contact__link">Affiliate Terms & Conditions</a>
                         <a href="#" class="contact__link">Privacy Policy</a>
                     </div>
+                    <div class="contact__quick">
+                        <h3 class="contact__title">Quick Contact</h3>
+                        <form action="#" class="contact__form">
+                            <input class="contact__name" name="name" type="text" placeholder="Name">
+                            <input class="contact__quick-email" name="email" type="email" placeholder="Email Address">
+                            <input class="contact__subject" name="subject" type="text" placeholder="Subject">
+                            <textarea class="contact__message" name="message" placeholder="Message"></textarea>
+                            <button class="contact__quick-btn">send</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </fotter>
+        </div>
+        <div class="rights">
+            <div class="container">
+                <div class="rights__wrapper">
+                    <div class="rights__reserved">© 2002-2018 themexpert Inc. All rights reserved.</div>
+                    <div class="rights__links">
+                        <a href="#">About</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
@@ -408,3 +431,5 @@
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
+</html>
