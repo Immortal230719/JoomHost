@@ -12,6 +12,9 @@
 
 .container {
     padding: 0;
+    @include tablet {
+        padding: 0 10px 0 10px;
+    }
 }
 
 @import 'blocks/header';

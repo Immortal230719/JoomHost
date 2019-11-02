@@ -4,6 +4,9 @@
     box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
     border-radius: 2px 2px 0 0;
     background-color: #ffffff;
+    @include tablet {
+        width: 300px;
+    }
     &__round {
         position: relative;
         width: 320px;
@@ -19,6 +22,9 @@
             height: 320px;
             border-radius: 0 0 100% 100%;
             background: $main-color;
+            @include tablet {
+                left: 10px;
+            }
         }
     }
     &__cost {
@@ -31,6 +37,9 @@
         letter-spacing: 1.16px;
         font-weight: 700;
         line-height: 20.33px;
+        @include tablet {
+            left: 100px;
+        }
         &__numbers {
             font-size: 33px;
             letter-spacing: 1.68px;
@@ -95,6 +104,10 @@
         font-weight: 500;
         line-height: 20.33px;
         letter-spacing: 0.88px;
+        @include tablet {
+            width: 300px;
+            margin-top: 25px;
+        }
         &:hover {
             background-color: rgb(255, 139, 6);
         }

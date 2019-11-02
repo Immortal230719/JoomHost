@@ -1,6 +1,10 @@
 .pay {
     min-height: 1304px;
     padding: 124px 0 179px 0;
+    @include tablet {
+        min-height: 1200px;
+        padding: 124px 0 50px 0;
+    }
     &__title {
         color: #2f3f54;
         font-family: 'Roboto';

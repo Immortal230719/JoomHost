@@ -74,7 +74,10 @@
         font-family: 'Roboto';
         font-size: 40px;
         font-weight: 700;
-        line-height: 50px;        
+        line-height: 50px;
+        @include tablet {
+            margin-left: 140px;
+        }        
     }
     &__link {
         font-family: 'Roboto';
@@ -96,6 +99,9 @@
         font-size: 14px;
         font-weight: 800;
         line-height: 24px;
+        @include tablet {
+            margin-left: 140px;
+        }
     }
     &__youtube {
         font-family: 'Lato';

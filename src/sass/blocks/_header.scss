@@ -7,6 +7,8 @@
     }
 
     &__menu {
+        display: flex;
+        justify-content: space-between;
         padding-top: 14px;
         color: $text-color;
         font-family: 'Lato';
@@ -19,11 +21,12 @@
 
         &__question {
             opacity: 0.3;
-            margin-right: 71px;
+            margin-right: 49px;
+            letter-spacing: -0.1px;
         }
 
         &__leftlink {
-            margin-right: 63px;
+            margin-right: 46px;
             text-decoration: none;
             opacity: 0.3;
             color: $text-color;
@@ -42,13 +45,14 @@
 
             &:nth-child(1) {
 
-                &::before {
+                &::after {
                     content: '';
-                    position: absolute;
-                    top: 4px;
-                    right: 220px;
-                    width: 16px;
-                    height: 14px;
+                    display: block;
+                    position: relative;
+                    bottom: 16px;
+                    right: 22px;
+                    width: 14px;
+                    height: 12px;
                     background: url('../icons/head_usa.png') center (center / cover) no-repeat;
                 }
             }
@@ -63,16 +67,16 @@
 
 .icon-envelope {
     font-size: 19px;
-    position: absolute;
-    left: 167px;
+    position: relative;
+    right: 3px;
     top: 2px;
 }
 
 .icon-phone-call {
     font-size: 17px;
-    position: absolute;
+    position: relative;
     top: 3px;
-    left: 357px;
+    right: 3px;
 }
 
 .menu {
@@ -127,6 +131,10 @@
         }
 
         &__link {
+            @include tablet {
+                margin-left: 30px;
+            }
+
             &:hover {
                 color: rgb(255, 139, 6);
             }

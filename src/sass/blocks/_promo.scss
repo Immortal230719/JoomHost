@@ -122,6 +122,9 @@
         height: 229px;
         background-color: #ffffff;
         border-radius: 100%;
+        @include tablet {
+            left: 160px;
+        }
 
         &__start {
             margin-left: 2px;
@@ -175,6 +178,9 @@
         box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
         border-radius: 2px;
         background-color: #ffffff;
+        @include tablet {
+            padding: 110px 80px 75px 80px;
+        }
 
         &__descr {
             display: flex;
@@ -237,10 +243,14 @@
         border-radius: 2px 0 0 2px;
         background-color: #ffffff;
         opacity: 0.58;
+        border: none;
         color: #4a6385;
         font-family: 'Lato';
         font-size: 14px;
         font-weight: 300;
+        @include tablet {
+            width: 575px;
+        }
 
         &__btn {
             border: none;
@@ -254,6 +264,9 @@
             font-size: 14px;
             font-weight: 300;
             line-height: 24px;
+            @include tablet {
+                width: 190px;
+            }
             &:hover {
                 background-color: rgb(255, 139, 6);
             }

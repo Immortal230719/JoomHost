@@ -11,6 +11,10 @@
         box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
         border-radius: 2px;
         padding: 66px 138px 66px 120px;
+        @include tablet {
+            width: 940px;
+            padding:  66px 30px 66px 30px;
+        }
     }
     &__item {
         &:nth-child(1) {
@@ -94,6 +98,9 @@
         font-weight: 500;
         line-height: 24px;
         letter-spacing: -0.11px;
+        @include tablet {
+            width: 440px;
+        }
         span {
             color: #e74c3c;
             &:nth-child(3) {
@@ -169,5 +176,9 @@
         position: relative;
         right: -662px;
         top: -493px;
+        @include tablet {
+            top: -435px;
+            right: -460px;
+        }
     }
 }
