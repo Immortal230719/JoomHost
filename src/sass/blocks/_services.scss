@@ -1,11 +1,17 @@
 .services {
     min-height: 1203px;
     padding: 290px 0 130px 0;
+    @include phablet {
+        padding-bottom: 50px;
+    }
     &__wrapper {
         width: 555px;
         display: flex;
         box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
         border-radius: 2px;
+        @include phablet {
+            margin: 0 auto;
+        }
     }
 
     &__icon {
@@ -77,7 +83,10 @@
         line-height: 50px;
         @include tablet {
             margin-left: 140px;
-        }        
+        }
+        @include phablet {
+            margin: 42px auto;
+        }     
     }
     &__link {
         font-family: 'Roboto';
@@ -101,6 +110,10 @@
         line-height: 24px;
         @include tablet {
             margin-left: 140px;
+        }
+        @include phablet {
+            margin: 28px 0 0 0;
+            text-align: center;
         }
     }
     &__youtube {

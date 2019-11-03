@@ -14,6 +14,9 @@
         font-family: 'Lato';
         font-size: 14px;
         font-weight: 300;
+        @include phablet {
+            font-size: 12px;
+        }
 
         &__wrapper {
             display: flex;
@@ -23,6 +26,9 @@
             opacity: 0.3;
             margin-right: 49px;
             letter-spacing: -0.1px;
+            @include phablet {
+                margin-right: 30px;
+            }
         }
 
         &__leftlink {
@@ -30,6 +36,9 @@
             text-decoration: none;
             opacity: 0.3;
             color: $text-color;
+            @include phablet {
+                margin-right: 30px;
+            }
 
             &:hover {
                 text-decoration: none;
@@ -66,10 +75,13 @@
 }
 
 .icon-envelope {
-    font-size: 19px;
+    font-size: 18px;
     position: relative;
     right: 3px;
     top: 2px;
+    @include phablet {
+        font-size: 14px;
+    }
 }
 
 .icon-phone-call {
@@ -77,6 +89,9 @@
     position: relative;
     top: 3px;
     right: 3px;
+    @include phablet {
+        font-size: 14px;
+    }
 }
 
 .menu {
@@ -102,6 +117,10 @@
         line-height: 87px;
         font-weight: 700;
         text-transform: uppercase;
+        @include phablet {
+            margin-left: 15px;
+            font-size: 13px;
+        }
 
         &:hover {
             text-decoration: none;
@@ -122,6 +141,9 @@
         background-color: rgba(255, 255, 255, 0.815);
         height: 60px;
         border-radius: 0 0 7px 7px;
+        @include phablet {
+            padding: 0 10px;
+        }
 
         &__homelink {
 
@@ -133,6 +155,9 @@
         &__link {
             @include tablet {
                 margin-left: 30px;
+            }
+            @include phablet {
+                margin-left: 12px;
             }
 
             &:hover {

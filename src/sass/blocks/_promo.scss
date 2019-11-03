@@ -3,6 +3,9 @@
     max-height: 836px;
     padding: 150px 0 239px 0;
     background: url('../img/main_bg.jpg') center (center / cover) no-repeat;
+    @include phablet {
+        padding: 80px 0 150px 0;
+    }
 
     &__text{
         margin-left: 1px;
@@ -25,6 +28,9 @@
         font-weight: 700;
         line-height: 29px;
         text-transform: uppercase;
+        @include phablet {
+            line-height: 50px;
+        }
     }
 
     &__subheader {
@@ -105,6 +111,9 @@
         position: absolute;
         bottom: 0;
         right: -12px;
+        @include phablet {
+            bottom: 50px;
+        }
     }
 
     &__img__grey {
@@ -124,6 +133,11 @@
         border-radius: 100%;
         @include tablet {
             left: 160px;
+        }        
+        @include phablet {
+            position: relative;
+            left: 70px;
+            bottom: 50px;
         }
 
         &__start {
@@ -163,7 +177,10 @@
         font-family: 'Lato';
         font-size: 14px;
         font-weight: 400;
-        line-height: 14px;
+        line-height: 14px;        
+        @include phablet {
+            margin-top: 50px;
+        }
 
         &:hover {
             text-decoration: none;
@@ -181,6 +198,10 @@
         @include tablet {
             padding: 110px 80px 75px 80px;
         }
+        @include phablet {
+            height: 275px;
+            padding: 80px;
+        }
 
         &__descr {
             display: flex;
@@ -195,9 +216,16 @@
             font-family: 'Lato';
             font-size: 15px;
             font-weight: 700;
+            @include phablet {
+                margin: 30px 0 0 0;
+                font-size: 13px;
+            }
 
             li {
                 margin-right: 22px;
+                @include phablet {
+                    margin-right: 17px;
+                }
 
                 &:nth-child(1) {
                     color: #2575e7;
@@ -228,6 +256,9 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 15px;
+            @include phablet{
+                margin-top: 31px;
+            }
             &:hover {
                 text-decoration: none;
                 color: rgb(255, 139, 6);
@@ -251,6 +282,9 @@
         @include tablet {
             width: 575px;
         }
+        @include phablet {
+            width: 385px;
+        }
 
         &__btn {
             border: none;
@@ -266,6 +300,9 @@
             line-height: 24px;
             @include tablet {
                 width: 190px;
+            }
+            @include phablet{
+                width: 150px;
             }
             &:hover {
                 background-color: rgb(255, 139, 6);
