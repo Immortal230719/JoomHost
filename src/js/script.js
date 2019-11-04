@@ -23,7 +23,17 @@ $(document).ready(function () {
         slidesToScroll: 2,
         dotsClass: 'my-dots',
         dots: true,
-        speed: 1000
+        speed: 1000,
+        responsive: [
+            {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+            }
+            },           
+        ]
     });
 
     //! pageUp button

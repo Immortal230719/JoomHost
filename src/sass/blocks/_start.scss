@@ -15,26 +15,37 @@
             width: 940px;
             padding:  66px 30px 66px 30px;
         }
-    }
-    &__item {
-        &:nth-child(1) {
-            margin-right: 104px;
+        @include phablet {
+            width: 700px;
+            padding: 66px 50px 66px 50px;
         }
-    }       
+    }    
     
     &__img {
         display: flex;
         align-items: flex-start;
+        @include phablet{
+            justify-content: space-around;
+        }
         img {
             &:nth-child(1) {
-                margin: 10px 139px 0 32px;
+                margin: 10px 139px 0 32px;    
+                @include phablet{
+                    margin: 0;
+                }
             }
             &:nth-child(3) {
                 margin: 4px 145px 0 118px;
+                @include phablet{
+                    margin: 0;
+                }
             }
             &:nth-child(5) {
                 margin-left: 155px;
                 margin-top: 1px;
+                @include phablet{
+                    margin: 0;
+                }
             }
         }        
     }
@@ -42,19 +53,32 @@
     &__text {
         margin-top: 2px;
         display: flex;
+        @include phablet{
+           justify-content: space-between;
+        }
         div {
             &:nth-child(1) { 
                 margin-left: 1px;               
                 margin-right: 178px;
-                margin-top: 1px;                
+                margin-top: 1px; 
+                @include phablet{
+                    margin: 0;
+                }               
             }
             &:nth-child(2) {
-                margin-top: -3px;                
+                margin-top: -3px;
+                @include phablet{
+                    margin: 0;
+                }                
             }
             &:nth-child(3) {                
                 margin-left: 215px;
-                margin-top: 1px;                
+                margin-top: 1px;
+                @include phablet{
+                    margin: 0;
+                }                
             }
+            
         }
     }
     &__subtitle {
@@ -179,6 +203,9 @@
         @include tablet {
             top: -435px;
             right: -460px;
+        }
+        @include phablet{
+            display: none;
         }
     }
 }

@@ -2,6 +2,9 @@
     display: block;          
     min-height: 503px;
     background-color: $text-color2;
+    @include phablet {
+        min-height: 575px;
+    }
     a {
         &:hover {
             text-decoration: none;
@@ -13,6 +16,9 @@
         background-color: $text-color2;
         padding: 86px 0 0 0;
         display: flex;
+        @include phablet {
+            flex-wrap: wrap;
+        }
     }
     &__logo {
         display: flex;
@@ -98,6 +104,13 @@
         font-weight: 300;
         line-height: 10px;
         margin-bottom: 28px;
+        &-phablet {
+            @include phablet{
+                text-align: center;
+                margin: 20px 0 15px 0;
+                font-size: 19px;
+            }
+        }
     }
     &__link {
         color: #718db2;
@@ -111,12 +124,18 @@
         display: flex;
         flex-direction: column;
         margin-left: 51px;
+        @include phablet {
+            margin-left: -4px;
+        }
     }
 
     &__quick {
         display: flex;
         flex-direction: column;
         margin-left: 134px;
+        @include phablet {
+            margin-left: 0;
+        }
     }
     &__form {    
         width: 262px;    
@@ -126,6 +145,11 @@
         font-family: 'Lato';
         font-size: 11px;
         font-weight: 400;
+        @include phablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 700px;
+        }
     }
     &__name {
         padding-left: 11px;
@@ -134,6 +158,10 @@
         border: 1px solid #ffffff10;
         border-bottom: none;
         background-color: $text-color2;
+        @include phablet{
+            border-bottom: 1px solid #ffffff10;
+            width: 233px;
+        }
     }
     &__quick-email {
         padding-left: 12px;
@@ -142,6 +170,10 @@
         border: 1px solid #ffffff10;
         border-bottom: none;
         background-color: $text-color2;
+        @include phablet{
+            border-bottom: 1px solid #ffffff10;
+            width: 233px;
+        }
     }
     &__subject {
         padding-bottom: 5px;
@@ -151,6 +183,10 @@
         border: 1px solid #ffffff10;
         border-bottom: none;
         background-color: $text-color2;
+        @include phablet{
+            border-bottom: 1px solid #ffffff10;
+            width: 233px;
+        }
     }
     &__message {
         padding-top: 9px;
@@ -160,6 +196,10 @@
         resize: none;
         border: 1px solid #ffffff10;
         background-color: $text-color2;
+        @include phablet {
+            height: 50px;
+            width: 400px;
+        }
     }
     &__quick-btn {
         margin-top: 9px;
@@ -173,6 +213,14 @@
         text-transform: uppercase;
         cursor: pointer;
         border: none;
+        @include phablet {
+            margin: 0;
+            height: 50px;
+            width: 120px;
+            border-radius: 4px;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+        }
         &:hover {
             background-color: rgb(255, 139, 6);
         }

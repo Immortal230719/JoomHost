@@ -7,6 +7,12 @@
         @include tablet {
             padding-left: 83px;
         }
+        @include phablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 0 60px;
+        }
     }
     a {
         &:nth-child(2) {
@@ -35,6 +41,11 @@
             @include tablet{
                 margin-left: 170px;
             } 
+        }
+        @include phablet {
+            &:nth-child(n) {
+                margin: 0;
+            }
         }
     }
 }

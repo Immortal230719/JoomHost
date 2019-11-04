@@ -16,6 +16,9 @@
         color: #4a6385;
         letter-spacing: -0.1px;
         line-height: 26px;
+        @include phablet {
+            width: 275px;
+        }
     }
     &__bbb-logo {
         margin-top: 13px;
@@ -27,6 +30,10 @@
         margin-top: 64px;
         margin-left: 170px;
         letter-spacing: 0.3px;
+        @include phablet {
+            margin: 27px 0 0 0;
+            text-align: end;
+        }
     }
     &__links {
         margin-top: -6px;
