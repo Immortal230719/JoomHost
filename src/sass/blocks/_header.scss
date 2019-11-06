@@ -17,6 +17,9 @@
         @include phablet {
             font-size: 12px;
         }
+        @include tablet-portrait {
+            font-size: 11px;
+        }
 
         &__wrapper {
             display: flex;
@@ -29,6 +32,9 @@
             @include phablet {
                 margin-right: 30px;
             }
+            @include tablet-portrait{
+                display: none;
+            }
         }
 
         &__leftlink {
@@ -38,6 +44,9 @@
             color: $text-color;
             @include phablet {
                 margin-right: 30px;
+            }
+            @include tablet-portrait{
+                margin-right: 15px;
             }
 
             &:hover {
@@ -93,6 +102,15 @@
         font-size: 14px;
     }
 }
+.menu__logo_invisible {
+    display: none;
+    @include tablet-portrait {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
 
 .menu {
     padding: 0;
@@ -102,12 +120,17 @@
     align-items: center;
     height: 86px;
     background-color: $text-color;
+    @include tablet-portrait {
+        justify-content: center;
+        height: 50px;
+    }
 
     &__item_logo {
         flex-grow: 5;
-    }
-
-    
+        @include tablet-portrait{
+            display: none;
+        }
+    }     
 
     &__link {
         margin-left: 41px;
@@ -120,6 +143,11 @@
         @include phablet {
             margin-left: 15px;
             font-size: 13px;
+        }
+        @include tablet-portrait {
+            font-size: 12px;
+            line-height: 43px;
+            margin-left: 18px;
         }
 
         &:hover {

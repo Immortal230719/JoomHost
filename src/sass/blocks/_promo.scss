@@ -6,6 +6,9 @@
     @include phablet {
         padding: 80px 0 150px 0;
     }
+    @include tablet-portrait {
+        max-height: 780px;
+    }
 
     &__text{
         margin-left: 1px;
@@ -120,6 +123,9 @@
         position: absolute;
         bottom: 0;
         margin-left: 46px;
+        @include tablet-portrait {
+            display: none;
+        }
     }
 
     &__label {
@@ -138,6 +144,14 @@
             position: relative;
             left: 70px;
             bottom: 50px;
+        }
+        @include tablet-portrait {
+            position: absolute;
+            left: 340px;
+            bottom: 350px;
+            width: 190px;
+            height: 190px;
+            padding: 54px 39px 69px 31px;
         }
 
         &__start {
@@ -202,9 +216,17 @@
             height: 275px;
             padding: 80px;
         }
+        @include tablet-portrait {
+            margin-top: 60px;
+            height: 220px;
+            padding: 50px 50px 40px 50px;
+        }
 
         &__descr {
             display: flex;
+            @include tablet-portrait {
+                flex-wrap: wrap;
+            }
         }
 
         &__example {
@@ -220,11 +242,17 @@
                 margin: 30px 0 0 0;
                 font-size: 13px;
             }
+            @include tablet-portrait {
+                margin-top: 20px;
+            }
 
             li {
                 margin-right: 22px;
                 @include phablet {
                     margin-right: 17px;
+                }
+                @include tablet-portrait{
+                    margin-right: 22px;
                 }
 
                 &:nth-child(1) {
@@ -245,6 +273,9 @@
 
                 &:nth-child(5) {
                     color: #00e2aa;
+                    @include tablet-portrait {
+                        margin: 0;
+                    }
                 }
             }
         }
@@ -258,6 +289,10 @@
             line-height: 15px;
             @include phablet{
                 margin-top: 31px;
+            }
+            @include tablet-portrait {                
+                margin: 0 auto;
+                margin-top: 12px;
             }
             &:hover {
                 text-decoration: none;
@@ -284,6 +319,9 @@
         }
         @include phablet {
             width: 385px;
+        }
+        @include tablet-portrait {
+            width: 265px;
         }
 
         &__btn {
