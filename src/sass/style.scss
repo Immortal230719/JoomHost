@@ -1,32 +1,31 @@
-@import 'lib/bootstrap-reboot.min';
-@import 'lib/bootstrap-grid.min';
-@import 'lib/slick';
-@import 'lib/fonts';
+@import "lib/bootstrap-reboot.min";
+@import "lib/bootstrap-grid.min";
+@import "lib/slick";
+@import "lib/fonts";
 
-@import 'base/variables';
-@import 'base/mixins';
+@import "base/variables";
+@import "base/mixins";
 
 * {
-    font-family: 'Roboto', 'Lato', 'OpenSans', sans-serif;
+  font-family: "Roboto", "Lato", "OpenSans", sans-serif;
 }
 
 .container {
-    padding: 0;
-    @include tablet {
-        padding: 0 10px 0 10px;
-    }
+  padding: 0;
+  @include tablet {
+    padding: 0 10px 0 10px;
+  }
 }
 
-@import 'blocks/header';
-@import 'blocks/promo';
-@import 'blocks/services';
-@import 'blocks/start';
-@import 'blocks/pay';
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/services";
+@import "blocks/start";
+@import "blocks/pay";
 @import "blocks/card";
 @import "blocks/slider";
-@import 'blocks/brands';
-@import 'blocks/pageup';
-@import 'blocks/footer';
-@import 'blocks/rights';
-@import 'blocks/payment';
-
+@import "blocks/brands";
+@import "blocks/pageup";
+@import "blocks/footer";
+@import "blocks/rights";
+@import "blocks/payment";

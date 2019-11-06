@@ -1,47 +1,72 @@
 .pay {
-    min-height: 1304px;
-    padding: 124px 0 179px 0;
-    @include tablet {
-        min-height: 1200px;
-        padding: 124px 0 50px 0;
+  min-height: 1304px;
+  padding: 124px 0 179px 0;
+  @include tablet {
+    min-height: 1200px;
+    padding: 124px 0 50px 0;
+  }
+  @include tablet-portrait {
+    padding: 80px 0 50px 0;
+  }
+  &__title {
+    color: #2f3f54;
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.06px;
+    span {
+      color: $main-color;
     }
-    &__title {
-        color: #2f3f54;
-        font-family: 'Roboto';
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 50px;
-        text-align: center;
-        letter-spacing: 0.06px;
-        span {
-            color: $main-color;
-        }
-    }
+  }
 
-    &__descr {
-        margin: 0 auto;
-        margin-top: 38px;
-        width: 595px;
-        color: $text-color2;
-        font-family: 'Roboto';
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 24px;
-        text-align: center;
-        letter-spacing: 0.4px;
-        span {
-            color: #e74c3c;
-            &:nth-child(3) {
-                color: #42d6c1;
-            }
-        }        
+  &__descr {
+    margin: 0 auto;
+    margin-top: 38px;
+    width: 595px;
+    color: $text-color2;
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    span {
+      color: #e74c3c;
+      &:nth-child(3) {
+        color: #42d6c1;
+      }
     }
-    &__wrapper {
-        display: flex;
-        margin-top: 120px;
-        justify-content: space-between;
-        @include phablet{
-            justify-content: space-around;
-        }
+    @include tablet-portrait {
+      width: 100%;
+      margin-bottom: 30px;
     }
+  }
+  &__wrapper {
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-between;
+    @include phablet {
+      justify-content: space-around;
+    }
+    @include tablet-portrait {
+      display: none;
+    }
+  }
+}
+
+.slider-card-visible {
+  display: none;
+  @include tablet-portrait {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .slick-slide {
+    margin: 0 100px;
+    &:focus {
+      outline: none;
+    }
+  }
 }

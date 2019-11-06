@@ -6,9 +6,12 @@
         min-height: 575px;
     }
     a {
+        transition: 0.2s all;
         &:hover {
             text-decoration: none;
-            color: #718db2;
+            color: #a1c9fd;
+            position: relative;
+            left: 10px;
         }
     }
     &__wrapper {        

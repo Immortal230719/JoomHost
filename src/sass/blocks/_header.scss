@@ -125,6 +125,13 @@
         height: 50px;
     }
 
+    &__item {
+        transition: 0.4s all;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
     &__item_logo {
         flex-grow: 5;
         @include tablet-portrait{
@@ -140,6 +147,11 @@
         line-height: 87px;
         font-weight: 700;
         text-transform: uppercase;
+        transition: 0.3s all;
+        &:hover {
+            text-decoration: none;
+            color: rgb(255, 139, 6);
+        }
         @include phablet {
             margin-left: 15px;
             font-size: 13px;
@@ -150,10 +162,7 @@
             margin-left: 18px;
         }
 
-        &:hover {
-            text-decoration: none;
-            color: rgb(255, 139, 6);
-        }
+        
     }
 }
 

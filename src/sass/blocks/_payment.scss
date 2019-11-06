@@ -1,66 +1,72 @@
 .payment {
-    &__wrapper {
-        height: 200px;
-        display: flex;
-        justify-content: space-between;
+  &__wrapper {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bbb {
+    margin-top: 41px;
+    margin-left: -1px;
+  }
+  &__descr {
+    width: 422px;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 400;
+    color: #4a6385;
+    letter-spacing: -0.1px;
+    line-height: 26px;
+    @include phablet {
+      width: 275px;
     }
-    &__bbb {
-        margin-top: 41px;
+  }
+  &__bbb-logo {
+    margin-top: 13px;
+  }
+  &__options {
+    font-size: 14px;
+    font-family: "Lato";
+    color: #9dacc0ce;
+    margin-top: 64px;
+    margin-left: 170px;
+    letter-spacing: 0.3px;
+    @include phablet {
+      margin: 27px 0 0 0;
+      text-align: end;
+    }
+  }
+  &__links {
+    margin-top: -6px;
+    a {
+      img {
+        transition: 0.3s all;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      &:nth-child(1) {
+        margin-left: 1px;
+      }
+      &:nth-child(2) {
         margin-left: -1px;
+      }
+      &:nth-child(3) {
+        margin-left: 1px;
+      }
+      &:nth-child(4) {
+        margin-left: -1px;
+      }
+      &:nth-child(5) {
+        margin-left: -2px;
+      }
+      &:nth-child(6) {
+        margin-left: -2px;
+      }
+      &:nth-child(7) {
+        position: relative;
+        top: 9px;
+        left: 2px;
+      }
     }
-    &__descr {
-        width: 422px;
-        font-family: 'Lato';
-        font-size: 16px;
-        font-weight: 400;
-        color: #4a6385;
-        letter-spacing: -0.1px;
-        line-height: 26px;
-        @include phablet {
-            width: 275px;
-        }
-    }
-    &__bbb-logo {
-        margin-top: 13px;
-    }
-    &__options {
-        font-size: 14px;
-        font-family: 'Lato';
-        color: #9dacc0ce;
-        margin-top: 64px;
-        margin-left: 170px;
-        letter-spacing: 0.3px;
-        @include phablet {
-            margin: 27px 0 0 0;
-            text-align: end;
-        }
-    }
-    &__links {
-        margin-top: -6px;
-        a {
-            &:nth-child(1) {
-                margin-left: 1px;
-            }
-            &:nth-child(2) {
-                margin-left: -1px;
-            }
-            &:nth-child(3) {
-                margin-left: 1px;
-            }
-            &:nth-child(4) {
-                margin-left: -1px;
-            }
-            &:nth-child(5) {
-                margin-left: -2px;
-            }
-            &:nth-child(6) {
-                margin-left: -2px;
-            }
-            &:nth-child(7) {
-                position: relative;
-                top: 9px;
-                left: 2px;
-            }
-        }
-    }
+  }
 }

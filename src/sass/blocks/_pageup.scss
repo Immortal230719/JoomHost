@@ -1,17 +1,17 @@
 .page-up {
-    display: none;
-    position: fixed;
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-    bottom: 30px;
-    right: 20px;
-    background-color: rgba(173, 173, 170, 0.753);
-    &:after {
-        content: '';
-        display: block;
-        width: 50px;
-        height: 50px;
-        background: url('../icons/page_up.svg') center (center / cover) no-repeat;
-    }  
+  display: none;
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  bottom: 30px;
+  right: 20px;
+  background-color: rgba(173, 173, 170, 0.753);
+  &:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../icons/page_up.svg") center (center / cover) no-repeat;
+  }
 }
