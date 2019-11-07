@@ -1,9 +1,15 @@
 .rights {
-  height: 59px;
+  min-height: 59px;
   background-color: #4a6385;
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    @include tablet-portrait {
+      min-height: 95px;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 25px;
+    }
   }
   &__reserved {
     margin-left: -2px;

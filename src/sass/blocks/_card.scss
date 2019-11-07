@@ -4,9 +4,6 @@
   box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
   border-radius: 2px 2px 0 0;
   background-color: #ffffff;
-  &:focus {
-    border: none;
-  }
   @include phablet {
     &:nth-child(3) {
       display: none;
@@ -14,6 +11,9 @@
   }
   @include tablet {
     width: 300px;
+  }
+  @include tablet-portrait {
+    min-height: 525px;
   }
   &__round {
     position: relative;
@@ -59,19 +59,47 @@
   }
   &__img {
     display: block;
-    margin-top: 17px;
-    margin-left: 116px;
+    width: 157px;
+    height: 123px;
+    margin-top: -7px;
+    margin-left: 98px;
+    transition: 0.4s all;
+    background: url("../icons/pay/pay_1.png") center (center / cover) no-repeat;
+    &:hover {
+      background: url("../icons/pay/pay_hover.png") center (center / cover)
+        no-repeat;
+    }
+  }
+  &__img_2 {
+    width: 135px;
+    height: 107px;
+    margin-top: 8px;
+    margin-left: 111px;
+    background: url("../icons/pay/pay_2.png") center (center / cover) no-repeat;
+    @include tablet-portrait {
+      margin-top: -10px;
+    }
+  }
+  &__img_3 {
+    width: 126px;
+    height: 100px;
+    margin-top: 16px;
+    margin-left: 111px;
+    background: url("../icons/pay/pay_3.png") center (center / cover) no-repeat;
+    @include tablet-portrait {
+      margin-top: -10px;
+    }
   }
   &__title {
     margin-left: 49px;
-    margin-top: 48px;
+    margin-top: 32px;
     color: $main-color;
     font-family: "Roboto";
     font-size: 31px;
     font-weight: 700;
     line-height: 50.81px;
     @include tablet-portrait {
-      margin-top: 48px;
+      margin-top: 10px;
     }
   }
   &__descr {
@@ -82,6 +110,9 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.2px;
+    @include tablet-portrait {
+      display: none;
+    }
   }
   &__ul {
     margin-top: 45px;
@@ -94,6 +125,9 @@
     font-weight: 500;
     line-height: 36px;
     letter-spacing: 0.4px;
+    @include tablet-portrait {
+      margin-top: 15px;
+    }
     li {
       span {
         position: relative;
@@ -115,32 +149,13 @@
     font-weight: 500;
     line-height: 20.33px;
     letter-spacing: 0.88px;
+    transition: 0.4s all;
     @include tablet {
       width: 300px;
       margin-top: 25px;
     }
     &:hover {
       background-color: rgb(255, 139, 6);
-    }
-  }
-  &:nth-child(2) {
-    img {
-      display: block;
-      margin-top: 21px;
-      margin-left: 116px;
-    }
-    h3 {
-      margin-top: 41px;
-    }
-  }
-  &:nth-child(3) {
-    img {
-      display: block;
-      margin-top: 45px;
-      margin-left: 126px;
-    }
-    h3 {
-      margin-top: 40px;
     }
   }
 }

@@ -1,205 +1,196 @@
 .header {
-    height: 47px;
-    background-color: #2f3f54;
-
-    span {
-        opacity: 0.3;
+  height: 47px;
+  background-color: #2f3f54;
+  span {
+    opacity: 0.3;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    color: $text-color;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 300;
+    @include phablet {
+      font-size: 12px;
     }
-
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 14px;
+    @include tablet-portrait {
+      font-size: 11px;
+    }
+    &__wrapper {
+      display: flex;
+    }
+    &__question {
+      opacity: 0.3;
+      margin-right: 49px;
+      letter-spacing: -0.1px;
+      @include phablet {
+        margin-right: 30px;
+      }
+      @include tablet-portrait {
+        display: none;
+      }
+    }
+    &__leftlink {
+      margin-right: 46px;
+      text-decoration: none;
+      opacity: 0.3;
+      color: $text-color;
+      @include phablet {
+        margin-right: 30px;
+      }
+      @include tablet-portrait {
+        margin-right: 15px;
+      }
+      &:hover {
+        text-decoration: none;
         color: $text-color;
-        font-family: 'Lato';
-        font-size: 14px;
-        font-weight: 300;
-        @include phablet {
-            font-size: 12px;
-        }
-        @include tablet-portrait {
-            font-size: 11px;
-        }
-
-        &__wrapper {
-            display: flex;
-        }
-
-        &__question {
-            opacity: 0.3;
-            margin-right: 49px;
-            letter-spacing: -0.1px;
-            @include phablet {
-                margin-right: 30px;
-            }
-            @include tablet-portrait{
-                display: none;
-            }
-        }
-
-        &__leftlink {
-            margin-right: 46px;
-            text-decoration: none;
-            opacity: 0.3;
-            color: $text-color;
-            @include phablet {
-                margin-right: 30px;
-            }
-            @include tablet-portrait{
-                margin-right: 15px;
-            }
-
-            &:hover {
-                text-decoration: none;
-                color: $text-color;
-            }
-        }
-
-        &__link {
-            margin-left: 20px;
-            text-decoration: none;
-            opacity: 0.3;
-            color: $text-color;
-
-            &:nth-child(1) {
-
-                &::after {
-                    content: '';
-                    display: block;
-                    position: relative;
-                    bottom: 16px;
-                    right: 22px;
-                    width: 14px;
-                    height: 12px;
-                    background: url('../icons/head_usa.png') center (center / cover) no-repeat;
-                }
-            }
-
-            &:hover {
-                text-decoration: none;
-                color: $text-color;
-            }
-        }
+      }
     }
+    &__link {
+      margin-left: 20px;
+      text-decoration: none;
+      opacity: 0.3;
+      color: $text-color;
+      &:nth-child(1) {
+        &::after {
+          content: "";
+          display: block;
+          position: relative;
+          bottom: 16px;
+          right: 22px;
+          width: 14px;
+          height: 12px;
+          background: url("../icons/head_usa.png") center (center / cover)
+            no-repeat;
+        }
+      }
+      &:hover {
+        text-decoration: none;
+        color: $text-color;
+      }
+    }
+  }
 }
-
 .icon-envelope {
-    font-size: 18px;
-    position: relative;
-    right: 3px;
-    top: 2px;
-    @include phablet {
-        font-size: 14px;
-    }
+  font-size: 18px;
+  position: relative;
+  right: 3px;
+  top: 2px;
+  @include phablet {
+    font-size: 14px;
+  }
 }
-
 .icon-phone-call {
-    font-size: 17px;
-    position: relative;
-    top: 3px;
-    right: 3px;
-    @include phablet {
-        font-size: 14px;
-    }
+  font-size: 17px;
+  position: relative;
+  top: 3px;
+  right: 3px;
+  @include phablet {
+    font-size: 14px;
+  }
 }
 .menu__logo_invisible {
-    display: none;
-    @include tablet-portrait {
-        display: block;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
+  display: none;
+  @include tablet-portrait {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 }
-
 .menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    height: 86px;
-    background-color: $text-color;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 86px;
+  background-color: $text-color;
+  @include tablet-portrait {
+    justify-content: center;
+    height: 50px;
+  }
+  &__item {
+    transition: 0.4s all;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__item_logo {
+    flex-grow: 5;
     @include tablet-portrait {
-        justify-content: center;
-        height: 50px;
+      display: none;
     }
-
-    &__item {
-        transition: 0.4s all;
-        &:hover {
-            transform: scale(1.2);
-        }
+  }
+  &__link {
+    margin-left: 41px;
+    color: $text-color2;
+    font-family: "OpenSans";
+    font-size: 14px;
+    line-height: 87px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    &:hover {
+      text-decoration: none;
+      color: rgb(255, 139, 6);
     }
-
-    &__item_logo {
-        flex-grow: 5;
-        @include tablet-portrait{
-            display: none;
-        }
-    }     
-
-    &__link {
-        margin-left: 41px;
+    @include phablet {
+      margin-left: 15px;
+      font-size: 13px;
+    }
+    @include tablet-portrait {
+      font-size: 12px;
+      line-height: 43px;
+      margin-left: 18px;
+      &:hover {
         color: $text-color2;
-        font-family: "OpenSans";
-        font-size: 14px;
-        line-height: 87px;
-        font-weight: 700;
-        text-transform: uppercase;
-        transition: 0.3s all;
-        &:hover {
-            text-decoration: none;
-            color: rgb(255, 139, 6);
-        }
-        @include phablet {
-            margin-left: 15px;
-            font-size: 13px;
-        }
-        @include tablet-portrait {
-            font-size: 12px;
-            line-height: 43px;
-            margin-left: 18px;
-        }
-
-        
+      }
     }
+  }
 }
 
 .nav_fixed {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    top: 0;
-
-    .menu {
-        padding: 0 50px;
-        background-color: rgba(255, 255, 255, 0.815);
-        height: 60px;
-        border-radius: 0 0 7px 7px;
-        @include phablet {
-            padding: 0 10px;
-        }
-
-        &__homelink {
-
-            &:hover {
-                color: rgb(255, 139, 6);
-            }
-        }
-
-        &__link {
-            @include tablet {
-                margin-left: 30px;
-            }
-            @include phablet {
-                margin-left: 12px;
-            }
-
-            &:hover {
-                color: rgb(255, 139, 6);
-            }
-        }
+  display: none;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  .menu {
+    padding: 0 50px;
+    background-color: rgba(255, 255, 255, 0.815);
+    height: 60px;
+    border-radius: 0 0 7px 7px;
+    @include phablet {
+      padding: 0 10px;
     }
+    &__homelink {
+      &:hover {
+        color: rgb(255, 139, 6);
+      }
+      @include tablet-portrait {
+        &:hover {
+          color: $text-color2;
+        }
+      }
+    }
+    &__link {
+      @include tablet {
+        margin-left: 30px;
+      }
+      @include phablet {
+        margin-left: 12px;
+      }
+      &:hover {
+        color: rgb(255, 139, 6);
+      }
+      @include tablet-portrait {
+        &:hover {
+          color: $text-color2;
+        }
+      }
+    }
+  }
 }
