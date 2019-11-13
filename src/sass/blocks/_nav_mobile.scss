@@ -1,0 +1,26 @@
+.nav {
+  @include phone {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.719);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    transition: 0.8s all;
+    &_active {
+      left: 0;
+    }
+  }
+  .menu {
+    @include phone {
+      flex-direction: column;
+      margin-top: 20px;
+      height: 320px;
+      justify-content: flex-start;
+      background: rgba(255, 255, 255, 0);
+    }
+  }
+}

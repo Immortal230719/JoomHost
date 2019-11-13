@@ -5,6 +5,9 @@
   @include tablet-portrait {
     padding: 30px 0 50px 0;
   }
+  &__title {
+    display: none;
+  }
   &__wrapper {
     padding-left: 39px;
     @include tablet {

@@ -1,8 +1,10 @@
 $(document).ready(function() {
   //! navFixed fadeIn
 
+  let windowWidth = window.innerWidth;
+
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 150) {
+    if ($(this).scrollTop() > 150 && windowWidth >= 576) {
       $(".nav_fixed").css("display", "flex");
       $("nav_fixed").hide();
       $(".nav_fixed").fadeIn();
@@ -64,4 +66,22 @@ $(document).ready(function() {
   });
 
   new WOW().init();
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".nav"),
+    menuItem = document.querySelectorAll(".menu_item"),
+    hamburger = document.querySelector(".hamburger");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("hamburger_active");
+    menu.classList.toggle("nav_active");
+  });
+
+  menuItem.forEach(item => {
+    item.addEventListener("click", () => {
+      hamburger.classList.toggle("hamburger_active");
+      menu.classList.toggle("nav_active");
+    });
+  });
 });

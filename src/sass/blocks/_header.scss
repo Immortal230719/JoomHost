@@ -4,6 +4,12 @@
   span {
     opacity: 0.3;
   }
+  @include phone {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+  }
   &__menu {
     display: flex;
     justify-content: space-between;
@@ -18,8 +24,23 @@
     @include tablet-portrait {
       font-size: 11px;
     }
+    @include phone {
+      padding-top: 4px;
+      justify-content: space-around;
+    }
     &__wrapper {
       display: flex;
+      @include phone {
+        flex-direction: column;
+      }
+    }
+    &__user {
+      display: flex;
+      @include phone {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+      }
     }
     &__question {
       opacity: 0.3;
@@ -43,6 +64,9 @@
       @include tablet-portrait {
         margin-right: 15px;
       }
+      @include phone {
+        margin-top: 2px;
+      }
       &:hover {
         text-decoration: none;
         color: $text-color;
@@ -54,6 +78,9 @@
       opacity: 0.3;
       color: $text-color;
       &:nth-child(1) {
+        @include phone {
+          display: none;
+        }
         &::after {
           content: "";
           display: block;
@@ -66,9 +93,47 @@
             no-repeat;
         }
       }
+      &:nth-child(2) {
+        @include phone {
+          line-height: 22px;
+        }
+      }
       &:hover {
         text-decoration: none;
         color: $text-color;
+      }
+    }
+  }
+}
+.hamburger {
+  display: none;
+  @include phone {
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    span {
+      display: block;
+      height: 2px;
+      width: 26px;
+      background-color: #fff;
+      margin-bottom: 3px;
+    }
+    &_active {
+      span {
+        margin-bottom: 3px;
+        &:nth-child(1) {
+          transform: translateY(7px) rotate(-45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: translateY(2px) rotate(45deg);
+        }
       }
     }
   }
@@ -117,6 +182,11 @@
     &:hover {
       transform: scale(1.2);
     }
+    @include tablet-portrait {
+      &:hover {
+        transform: scale(1);
+      }
+    }
   }
   &__item_logo {
     flex-grow: 5;
@@ -148,6 +218,9 @@
       &:hover {
         color: $text-color2;
       }
+    }
+    @include phone {
+      margin-left: 0;
     }
   }
 }
