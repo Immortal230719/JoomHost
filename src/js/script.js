@@ -4,7 +4,7 @@ $(document).ready(function() {
   let windowWidth = window.innerWidth;
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 150 && windowWidth >= 576) {
+    if ($(this).scrollTop() > 150 && windowWidth > 576) {
       $(".nav_fixed").css("display", "flex");
       $("nav_fixed").hide();
       $(".nav_fixed").fadeIn();

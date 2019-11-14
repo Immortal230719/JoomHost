@@ -4,6 +4,9 @@
   @include phablet {
     padding-bottom: 50px;
   }
+  @include phone {
+    padding: 200px 0 50px 0;
+  }
   &__wrapper {
     width: 555px;
     display: flex;
@@ -14,6 +17,9 @@
     }
     @include tablet-portrait {
       width: 520px;
+    }
+    @include phone {
+      width: 100%;
     }
   }
 
@@ -33,6 +39,9 @@
         margin-top: 7px;
       }
     }
+    @include phone {
+      display: none;
+    }
   }
 
   &__text {
@@ -42,6 +51,11 @@
     box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
     border-radius: 2px;
     background-color: $main-color;
+    @include phone {
+      width: 100%;
+      min-height: 1000px;
+      padding: 30px 10px;
+    }
   }
 
   &__title {
@@ -50,9 +64,14 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
-
     @include tablet-portrait {
       font-size: 37px;
+    }
+    @include phone {
+      margin: 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 30px;
     }
   }
 
@@ -62,6 +81,38 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include phone {
+      margin-top: 0;
+    }
+  }
+  &__item {
+    &:nth-child(2) {
+      .services__subtitle {
+        @include phone {
+          &:before {
+            width: 80px;
+            height: 80px;
+            background: url("../icons/service/service_2.png") center no-repeat;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      .services__subtitle {
+        @include phone {
+          &:before {
+            height: 80px;
+            width: 80px;
+            background: url("../icons/service/service_3.png") center no-repeat;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+    @include phone {
+      margin-top: 60px;
+    }
   }
   &__subtitle {
     color: $text-color;
@@ -69,6 +120,22 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
+    @include phone {
+      text-align: center;
+      &:before {
+        content: "";
+        display: block;
+        position: relative;
+        left: 50%;
+        bottom: 15px;
+        transform: translateX(-50%);
+        height: 80px;
+        width: 80px;
+        background: url("../icons/service/service_1.png") center no-repeat;
+        background-color: #fff;
+        border-radius: 100%;
+      }
+    }
   }
 
   &__descr {
@@ -98,6 +165,11 @@
     @include tablet-portrait {
       font-size: 37px;
     }
+    @include phone {
+      font-size: 22px;
+      margin: 60px auto;
+      line-height: 40px;
+    }
   }
   &__link {
     font-family: "Roboto";
@@ -108,6 +180,10 @@
     &:hover {
       text-decoration: none;
       color: rgb(255, 139, 6);
+    }
+    @include phone {
+      line-height: 40px;
+      font-size: 30px;
     }
   }
 
