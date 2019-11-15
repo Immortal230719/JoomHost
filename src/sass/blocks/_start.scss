@@ -1,8 +1,11 @@
 .start {
   position: relative;
-  height: 1101px;
+  min-height: 1101px;
   padding: 135px 0 108px 0;
   background-color: #fafafa;
+  @include phone {
+    padding: 100px 0 30px 0;
+  }
   &__block {
     background-color: #ffffff;
     width: 1140px;
@@ -24,8 +27,16 @@
       height: 100%;
       padding: 40px 15px;
     }
+    @include phone {
+      padding: 10px;
+    }
   }
-
+  &__phone_visible {
+    display: none;
+    @include phone {
+      display: block;
+    }
+  }
   &__img {
     display: flex;
     align-items: flex-start;
@@ -34,6 +45,12 @@
     }
     @include tablet-portrait {
       justify-content: flex-start;
+    }
+    @include phone {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 500px;
     }
     img {
       &:nth-child(1) {
@@ -45,22 +62,30 @@
           margin-left: 26px;
           margin-right: 100px;
         }
+        @include phone {
+          margin: 0;
+        }
       }
-      &:nth-child(3) {
+      &:nth-child(4) {
         margin: 4px 145px 0 118px;
         @include phablet {
           margin: 0;
         }
+        @include phone {
+          margin: 40px 0 0 0;
+        }
       }
-      &:nth-child(5) {
+      &:nth-child(7) {
         margin-left: 155px;
         margin-top: 1px;
         @include phablet {
-          margin: 0;
+          margin: 50px 0 0 0;
         }
-
         @include tablet-portrait {
           margin-left: 84px;
+        }
+        @include phone {
+          margin: 40px 0 0 0;
         }
       }
     }
@@ -71,6 +96,9 @@
     display: flex;
     @include phablet {
       justify-content: space-between;
+    }
+    @include phone {
+      display: none;
     }
     div {
       &:nth-child(1) {
@@ -124,11 +152,22 @@
     font-weight: 700;
     line-height: 54px;
     letter-spacing: -0.02px;
+    @include phone {
+      margin-top: 50px;
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+    }
     a {
       color: $main-color;
       &:hover {
         text-decoration: none;
         color: rgb(255, 139, 6);
+      }
+      @include tablet-portrait {
+        &:hover {
+          color: $main-color;
+        }
       }
     }
   }
@@ -145,6 +184,9 @@
     letter-spacing: -0.11px;
     @include tablet {
       width: 440px;
+    }
+    @include phone {
+      width: 100%;
     }
     span {
       color: #e74c3c;
@@ -229,6 +271,12 @@
         font-size: 37px;
         text-decoration: none;
         color: rgb(255, 139, 6);
+      }
+      @include tablet-portrait {
+        &:hover {
+          font-size: 34px;
+          color: $main-color;
+        }
       }
     }
   }

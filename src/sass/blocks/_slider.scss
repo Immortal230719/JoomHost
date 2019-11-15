@@ -14,6 +14,10 @@
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 0.1px;
+    @include phone {
+      font-size: 30px;
+      line-height: 35px;
+    }
     span {
       color: $main-color;
     }
@@ -24,6 +28,9 @@
     border: none;
     @include tablet {
       margin-top: 100px;
+    }
+    @include phone {
+      margin-top: 50px;
     }
     .slick-slide {
       display: flex;
@@ -39,6 +46,11 @@
         &:nth-child(n) {
           margin: 0 70px;
         }
+      }
+      @include phone {
+        width: 290px;
+        flex-direction: column;
+        height: 400px;
       }
       &:nth-child(2n - 1) {
         margin-right: 93px;
@@ -57,6 +69,11 @@
     height: 347px;
     background-color: $main-color;
     border: none;
+    @include phone {
+      width: 100%;
+      height: 140px;
+      border-radius: 4px 4px 0 0;
+    }
   }
   &__photo {
     margin-top: 114px;
@@ -68,10 +85,18 @@
     @include tablet {
       margin-left: 25px;
     }
+    @include phone {
+      margin: 10px auto;
+    }
   }
   &__wrapper {
     width: 329px;
     padding: 59px 40px 40px 41px;
+    @include phone {
+      width: 100%;
+      min-height: 260px;
+      padding: 20px;
+    }
   }
   &__descr {
     color: #4a6385;
@@ -102,12 +127,14 @@
 .my-dots {
   position: absolute;
   bottom: -87px;
-
   display: block;
   width: 100%;
   padding: 0;
   list-style: none;
   text-align: center;
+  @include phone {
+    bottom: -50px;
+  }
 }
 
 .my-dots li {

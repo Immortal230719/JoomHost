@@ -6,7 +6,7 @@
     padding: 124px 0 50px 0;
   }
   @include tablet-portrait {
-    min-height: 1000px;
+    min-height: 1030px;
     padding: 80px 0 50px 0;
   }
   &__title {
@@ -17,6 +17,11 @@
     line-height: 50px;
     text-align: center;
     letter-spacing: 0.06px;
+    @include phone {
+      font-size: 30px;
+      line-height: 35px;
+      text-align: left;
+    }
     span {
       color: $main-color;
     }

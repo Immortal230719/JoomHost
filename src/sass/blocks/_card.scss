@@ -69,6 +69,12 @@
       background: url("../icons/pay/pay_hover.png") center (center / cover)
         no-repeat;
     }
+    @include phone {
+      &:hover {
+        background: url("../icons/pay/pay_1.png") center (center / cover)
+          no-repeat;
+      }
+    }
   }
   &__img_2 {
     width: 135px;
@@ -150,12 +156,17 @@
     line-height: 20.33px;
     letter-spacing: 0.88px;
     transition: 0.4s all;
+    &:hover {
+      background-color: rgb(255, 139, 6);
+    }
     @include tablet {
       width: 300px;
       margin-top: 25px;
     }
-    &:hover {
-      background-color: rgb(255, 139, 6);
+    @include tablet-portrait {
+      &:hover {
+        background-color: $main-color;
+      }
     }
   }
 }
