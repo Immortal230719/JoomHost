@@ -16,6 +16,13 @@
       position: relative;
       left: 10px;
     }
+    @include tablet-portrait {
+      &:hover {
+        position: relative;
+        left: 0;
+        color: #718db2;
+      }
+    }
   }
   &__wrapper {
     min-height: 503px;
@@ -27,6 +34,9 @@
     }
     @include tablet-portrait {
       padding: 40px 0 0 0;
+    }
+    @include phone {
+      min-height: 1280px;
     }
   }
   &__img {
@@ -101,6 +111,11 @@
     &:hover {
       background-color: rgb(255, 139, 6);
     }
+    @include tablet-portrait {
+      &:hover {
+        background-color: $main-color;
+      }
+    }
     span {
       font-size: 15px;
       position: relative;
@@ -162,6 +177,9 @@
     }
     @include tablet-portrait {
       margin-top: 40px;
+    }
+    @include phone {
+      margin-left: 70px;
     }
   }
 
@@ -277,6 +295,11 @@
     }
     &:hover {
       background-color: rgb(255, 139, 6);
+    }
+    @include tablet-portrait {
+      &:hover {
+        background-color: $main-color;
+      }
     }
   }
 }

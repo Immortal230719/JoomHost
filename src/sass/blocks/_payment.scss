@@ -57,6 +57,9 @@
   }
   &__links {
     margin-top: -6px;
+    @include phone {
+      margin-top: 10px;
+    }
     a {
       img {
         transition: 0.3s all;

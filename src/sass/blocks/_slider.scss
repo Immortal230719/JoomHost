@@ -6,6 +6,9 @@
     min-height: 700px;
     padding: 60px 0 0 0;
   }
+  @include phone {
+    min-height: 650px;
+  }
   &__title {
     text-align: center;
     color: $text-color2;
@@ -48,7 +51,7 @@
         }
       }
       @include phone {
-        width: 290px;
+        width: 260px;
         flex-direction: column;
         height: 400px;
       }
@@ -72,7 +75,7 @@
     @include phone {
       width: 100%;
       height: 140px;
-      border-radius: 4px 4px 0 0;
+      border-radius: 5px 5px 0 0;
     }
   }
   &__photo {

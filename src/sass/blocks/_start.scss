@@ -79,7 +79,7 @@
         margin-left: 155px;
         margin-top: 1px;
         @include phablet {
-          margin: 50px 0 0 0;
+          margin: 0;
         }
         @include tablet-portrait {
           margin-left: 84px;
@@ -95,6 +95,7 @@
     margin-top: 2px;
     display: flex;
     @include phablet {
+      margin-top: 10px;
       justify-content: space-between;
     }
     @include phone {

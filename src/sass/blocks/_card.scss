@@ -15,6 +15,9 @@
   @include tablet-portrait {
     min-height: 525px;
   }
+  @include phone {
+    width: 280px;
+  }
   &__round {
     position: relative;
     width: 320px;
@@ -33,6 +36,10 @@
       @include tablet {
         left: 10px;
       }
+      @include phone {
+        width: 280px;
+        left: -3px;
+      }
     }
   }
   &__cost {
@@ -47,6 +54,9 @@
     line-height: 20.33px;
     @include tablet {
       left: 100px;
+    }
+    @include phone {
+      left: 90px;
     }
     &__numbers {
       font-size: 33px;
@@ -70,6 +80,7 @@
         no-repeat;
     }
     @include phone {
+      margin-left: 70px;
       &:hover {
         background: url("../icons/pay/pay_1.png") center (center / cover)
           no-repeat;
@@ -85,6 +96,9 @@
     @include tablet-portrait {
       margin-top: -10px;
     }
+    @include phone {
+      margin-left: 70px;
+    }
   }
   &__img_3 {
     width: 126px;
@@ -94,6 +108,9 @@
     background: url("../icons/pay/pay_3.png") center (center / cover) no-repeat;
     @include tablet-portrait {
       margin-top: -10px;
+    }
+    @include phone {
+      margin-left: 70px;
     }
   }
   &__title {
@@ -162,6 +179,9 @@
     @include tablet {
       width: 300px;
       margin-top: 25px;
+    }
+    @include phone {
+      width: 280px;
     }
     @include tablet-portrait {
       &:hover {

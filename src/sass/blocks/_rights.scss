@@ -18,12 +18,23 @@
     font-family: "Lato";
     font-size: 13px;
     font-weight: 400;
+    @include phone {
+      margin-left: 0;
+    }
   }
   &__links {
     margin-top: 20px;
     font-family: "Lato";
     font-size: 13px;
     font-weight: 400;
+    @include phone {
+      text-align: justify;
+      text-align-last: justify;
+      width: 220px;
+      line-height: 30px;
+      margin-top: 15px;
+      font-size: 15px;
+    }
     a {
       margin-left: 11px;
       color: #718db2;
